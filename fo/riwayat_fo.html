@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="../Asset%20SIM%20Modul%202/logo/Logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <title>Riwayat Transaksi | Front Office</title>
+</head>
+<body class="flex bg-gray-50 min-h-screen overflow-x-hidden">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="flex flex-col fixed top-0 left-0 z-50 w-20 lg:w-64 h-screen px-2 lg:px-4 py-6
+                   bg-[#4A7EE0] transition-all duration-300">
+
+        <div class="flex flex-col items-center text-center mb-8">
+            <img src="../Asset%20SIM%20Modul%202/logo/Logo.png" alt="Mega Electronic" class="w-10 h-10 lg:w-16 lg:h-16 object-contain">
+            <p class="hidden lg:block text-white text-sm font-semibold mt-2" style="font-family: Georgia, serif; letter-spacing: 0.15em;">
+                MEGA ELECTRONIC
+            </p>
+        </div>
+
+        <nav class="flex flex-col flex-1 gap-2">
+
+            <a href="db_fo.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></path>
+                    <path d="M9 22V12h6v10"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Dashboard</span>
+            </a>
+
+            <a href="katalog_hardware.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Katalog</span>
+            </a>
+
+            <a href="pesanan_masuk.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span class="hidden lg:block mx-3">Pesanan Masuk</span>
+            </a>
+
+            <a href="status_pesanan.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <path d="M20 8v6M23 11h-6"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Status Pesanan</span>
+            </a>
+
+            <a href="riwayat_fo.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white bg-white/10 border border-white rounded-xl font-bold transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Riwayat Transaksi</span>
+            </a>
+
+            <a href="jadwal_fo.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                    <path d="m9 16 2 2 4-4"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Jadwal FO</span>
+            </a>
+
+            <a href="biodata_fo.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="8" cy="8" r="4"></circle>
+                    <path d="M2 20c0-3 2.5-5 6-5s6 2 6 5"></path>
+                    <line x1="17" y1="7" x2="22" y2="7"></line>
+                    <line x1="17" y1="11" x2="22" y2="11"></line>
+                    <line x1="17" y1="15" x2="20" y2="15"></line>
+                </svg>
+                <span class="hidden lg:block mx-3">Biodata Saya</span>
+            </a>
+
+        </nav>
+
+        <a href="login_fo.html"
+           class="flex items-center justify-center gap-2 bg-[#EF6C6C] hover:bg-red-400 text-white text-sm font-medium py-3 rounded-full transition">
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <path d="M16 17l5-5-5-5"></path>
+                <path d="M21 12H9"></path>
+            </svg>
+            <span class="hidden lg:block">Logout</span>
+        </a>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="flex-1 ml-20 lg:ml-64 flex flex-col gap-6 px-4 sm:px-8 py-8 transition-all duration-300">
+
+        <!-- Card: Header + Tab Kategori -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
+
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                <div>
+                    <h1 class="text-2xl font-bold text-black">Katalog Produk</h1>
+                    <p class="text-sm mt-1 text-gray-400">Pilih produk untuk dibuatkan pesanan</p>
+                </div>
+
+                <div class="flex items-center gap-2 bg-gray-100 p-1 rounded-full w-fit">
+                    <a href="katalog_hardware.html" class="px-5 py-2 rounded-full text-sm font-medium bg-[#2E2E2E] text-white transition">Gadget</a>
+                    <a href="katalog_peripheral.html" class="px-5 py-2 rounded-full text-sm font-medium text-gray-500 hover:text-black transition">Networking</a>
+                </div>
+            </div>
+
+            <label class="flex items-center gap-3 border border-gray-200 rounded-full px-5 py-3 w-full sm:w-80 mt-6">
+                <input type="text" placeholder="Cari Produk..." class="w-full outline-none text-sm bg-transparent">
+                <svg class="w-5 h-5 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </label>
+        </div>
+
+        <!-- Card: List Produk -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 flex flex-col gap-4">
+
+            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
+                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/smart%20ring.png" alt="Smart Ring" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
+                <div class="flex-1">
+                    <p class="font-semibold text-black">Smart Ring</p>
+                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Cincin pintar pelacak kesehatan, detak jantung, tidur, dan aktivitas harian secara praktis.</p>
+                    <div class="flex items-center gap-3 mt-3">
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 599.000</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
+                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/headset.png" alt="FR Headset" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
+                <div class="flex-1">
+                    <p class="font-semibold text-black">FR Headset</p>
+                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Headset audio jernih dengan fitur peredam bising untuk pengalaman mendengarkan yang fokus.</p>
+                    <div class="flex items-center gap-3 mt-3">
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 449.000</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
+                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/gps%20tracker.png" alt="GPS Tracker" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
+                <div class="flex-1">
+                    <p class="font-semibold text-black">GPS Tracker</p>
+                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Alat pelacak lokasi real-time, praktis untuk memantau kendaraan atau barang berharga.</p>
+                    <div class="flex items-center gap-3 mt-3">
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 350.000</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
+                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/e%20reader.png" alt="E-Reader" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
+                <div class="flex-1">
+                    <p class="font-semibold text-black">E-Reader</p>
+                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Perangkat baca buku digital dengan layar anti-silau, ringan dan nyaman dibawa kemana saja.</p>
+                    <div class="flex items-center gap-3 mt-3">
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 1.299.000</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
+                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/tripod.png" alt="Phone Tripod" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
+                <div class="flex-1">
+                    <p class="font-semibold text-black">Phone Tripod</p>
+                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Penyangga ponsel fleksibel dan stabil, ideal untuk rekaman video, konten, serta foto bersama.</p>
+                    <div class="flex items-center gap-3 mt-3">
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
+                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 169.000</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex items-center justify-center gap-2 mt-4">
+                <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-black bg-black text-white text-sm">1</a>
+                <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 text-sm hover:border-black transition">2</a>
+                <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 text-sm hover:border-black transition">3</a>
+                <span class="text-gray-400 px-1">....</span>
+                <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 text-sm hover:border-black transition">20</a>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
