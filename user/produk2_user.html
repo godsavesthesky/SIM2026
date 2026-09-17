@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link rel="icon" type="image/x-icon" href="../Asset%20SIM%20Modul%202/logo/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    
+    <title>Networking - Mega Electronic</title>
+</head>
+<body class="bg-gray-50">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="sticky top-0 z-40 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between gap-6">
+                
+                <div class="flex items-center gap-3 shrink-0">
+                    <img src="../Asset%20SIM%20Modul%202/logo/Logo.png" alt="Mega Electronic" class="w-8 h-8 sm:w-10 sm:h-10">
+                    <span class="hidden sm:block text-sm font-bold" style="font-family: Georgia, serif; letter-spacing: 0.1em;">MEGA</span>
+                </div>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="home_user.html" class="text-sm font-medium text-gray-700 hover:text-[#4A7EE0] transition">Home</a>
+                    <a href="produk1_user.html" class="text-sm font-medium text-gray-700 hover:text-[#4A7EE0] transition">Gadget</a>
+                    <a href="produk2_user.html" class="text-sm font-medium text-black hover:text-[#4A7EE0] transition">Networking</a>
+                </div>
+
+                <div class="hidden lg:flex flex-1 max-w-xs mx-6">
+                    <input type="text" placeholder="Search products..." 
+                           class="w-full text-xs sm:text-sm px-4 py-2 bg-gray-100 rounded-full outline-none focus:bg-gray-50">
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button class="hidden sm:flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-100 transition">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-100 transition">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="10" r="3"></circle>
+                            <path d="M6.5 19c1-2.5 3-4 5.5-4s4.5 1.5 5.5 4"></path>
+                        </svg>
+                    </button>
+                    <a href="order.html" class="flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-100 transition relative">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HEADER ===== -->
+    <section class="bg-gradient-to-r from-purple-100 to-purple-50 py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col gap-3">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black">Networking</h1>
+                <p class="text-sm sm:text-base text-gray-700">Temukan solusi networking profesional dengan kualitas terjamin</p>
+                <div class="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
+                    <a href="home_user.html" class="hover:text-[#4A7EE0]">Home</a>
+                    <span class="text-gray-400">/</span>
+                    <span>Networking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8">
+
+            <!-- ===== SIDEBAR: Filter ===== -->
+            <aside class="lg:col-span-1">
+                <div class="bg-white rounded-2xl border border-gray-200 p-4 sm:p-6 sticky top-20">
+                    
+                    <h3 class="font-bold text-black mb-4 text-sm sm:text-base">Filter Produk</h3>
+
+                    <!-- Category Filter -->
+                    <div class="mb-6 pb-6 border-b border-gray-200">
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700 mb-3">Kategori</p>
+                        <div class="space-y-2 text-xs sm:text-sm">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 rounded">
+                                <span>Semua Networking</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 rounded">
+                                <span>WiFi Equipment</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 rounded">
+                                <span>Kabel & Connector</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 rounded">
+                                <span>Server Equipment</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="mb-6 pb-6 border-b border-gray-200">
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700 mb-3">Harga</p>
+                        <div class="space-y-2 text-xs sm:text-sm">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 rounded">
+                                <span>Rp 0 - Rp 1jt</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 rounded">
+                                <span>Rp 1jt - Rp 5jt</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 rounded">
+                                <span>Rp 5jt +</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Rating Filter -->
+                    <div>
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700 mb-3">Rating</p>
+                        <div class="space-y-2 text-xs sm:text-sm">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 rounded">
+                                <span>⭐⭐⭐⭐⭐ 5 Bintang</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 rounded">
+                                <span>⭐⭐⭐⭐ 4+ Bintang</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 rounded">
+                                <span>⭐⭐⭐ 3+ Bintang</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- ===== MAIN: Product Grid ===== -->
+            <div class="lg:col-span-3">
+                
+                <!-- Sort Bar -->
+                <div class="mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <p class="text-xs sm:text-sm text-gray-600">Menampilkan <span class="font-semibold">1-12</span> dari <span class="font-semibold">98</span> produk</p>
+                    <select class="text-xs sm:text-sm px-4 py-2 border border-gray-300 rounded-full outline-none focus:border-[#4A7EE0] bg-white">
+                        <option>Urutkan: Terbaru</option>
+                        <option>Harga Terendah</option>
+                        <option>Harga Tertinggi</option>
+                        <option>Rating Tertinggi</option>
+                        <option>Terlaris</option>
+                    </select>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-10">
+                    
+                    <!-- Product 1: Patch Panel -->
+                    <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
+                        <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
+                            <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-lg opacity-50"></div>
+                            <span class="absolute top-3 right-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">New</span>
+                        </div>
+                        <div class="p-4 sm:p-5">
+                            <h3 class="font-semibold text-sm sm:text-base text-black group-hover:text-[#4A7EE0] transition">Patch Panel</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 mt-1">Patch panel 24 port untuk instalasi jaringan</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="text-xs text-yellow-500">★★★★★</span>
+                                <span class="text-xs text-gray-500">(342)</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="font-bold text-sm">Rp 2.450.000</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 2: PoE Injector -->
+                    <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
+                        <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
+                            <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-lg opacity-50"></div>
+                        </div>
+                        <div class="p-4 sm:p-5">
+                            <h3 class="font-semibold text-sm sm:text-base text-black group-hover:text-[#4A7EE0] transition">PoE Injector</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 mt-1">Power over Ethernet injector 30W profesional</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="text-xs text-yellow-500">★★★★★</span>
+                                <span class="text-xs text-gray-500">(567)</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="font-bold text-sm">Rp 1.890.000</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 3: WiFi Extender -->
+                    <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
+                        <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
+                            <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-lg opacity-50"></div>
+                            <span class="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-25%</span>
+                        </div>
+                        <div class="p-4 sm:p-5">
+                            <h3 class="font-semibold text-sm sm:text-base text-black group-hover:text-[#4A7EE0] transition">WiFi Extender</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 mt-1">Perluas jangkauan WiFi hingga 100 meter</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="text-xs text-yellow-500">★★★★☆</span>
+                                <span class="text-xs text-gray-500">(1.2k)</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <div>
+                                    <span class="font-bold text-sm">Rp 749.000</span>
+                                    <span class="text-xs text-gray-400 line-through ml-2">Rp 999.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 4: SFP Module -->
+                    <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
+                        <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
+                            <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-lg opacity-50"></div>
+                        </div>
+                        <div class="p-4 sm:p-5">
+                            <h3 class="font-semibold text-sm sm:text-base text-black group-hover:text-[#4A7EE0] transition">SFP Module</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 mt-1">Transceiver SFP 10G untuk switch profesional</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="text-xs text-yellow-500">★★★★★</span>
+                                <span class="text-xs text-gray-500">(234)</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="font-bold text-sm">Rp 3.750.000</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 5: Signal Booster -->
+                    <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
+                        <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
+                            <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-lg opacity-50"></div>
+                        </div>
+                        <div class="p-4 sm:p-5">
+                            <h3 class="font-semibold text-sm sm:text-base text-black group-hover:text-[#4A7EE0] transition">Signal Booster</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 mt-1">Penguat sinyal WiFi antenna dB tinggi</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="text-xs text-yellow-500">★★★★☆</span>
+                                <span class="text-xs text-gray-500">(891)</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="font-bold text-sm">Rp 599.000</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 6: Network Cable Cat6 -->
+                    <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
+                        <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
+                            <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-lg opacity-50"></div>
+                            <span class="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-10%</span>
+                        </div>
+                        <div class="p-4 sm:p-5">
+                            <h3 class="font-semibold text-sm sm:text-base text-black group-hover:text-[#4A7EE0] transition">Network Cable Cat6</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 mt-1">Kabel jaringan Cat6 1 meter, kualitas premium</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="text-xs text-yellow-500">★★★★★</span>
+                                <span class="text-xs text-gray-500">(2.3k)</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <div>
+                                    <span class="font-bold text-sm">Rp 89.000</span>
+                                    <span class="text-xs text-gray-400 line-through ml-2">Rp 99.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex flex-wrap items-center justify-center gap-2">
+                    <button class="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 text-xs sm:text-sm">
+                        ← Prev
+                    </button>
+                    
+                    <button class="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-lg bg-[#4A7EE0] text-white font-semibold text-xs sm:text-sm">1</button>
+                    <button class="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 text-xs sm:text-sm">2</button>
+                    <button class="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 text-xs sm:text-sm">3</button>
+                    <span class="text-xs sm:text-sm text-gray-500">......</span>
+                    <button class="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 text-xs sm:text-sm">12</button>
+                    
+                    <button class="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 text-xs sm:text-sm">
+                        Next →
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8 mt-16">
+        <div class="max-w-7xl mx-auto mb-8">
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-xs sm:text-sm">
+                <div>
+                    <h4 class="font-bold text-white mb-3">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Gadget</a></li>
+                        <li><a href="#" class="hover:text-white transition">Networking</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-3">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-3">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Shipping</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-3">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-8 text-center text-xs sm:text-sm">
+            <p>&copy; 2026 Mega Elektronik. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
