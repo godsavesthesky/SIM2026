@@ -41,7 +41,7 @@
                 <span class="hidden lg:block mx-3">Dashboard</span>
             </a>
 
-            <a href="katalog_hardware.html"
+            <a href="katalog_produk1.html"
                class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
                       text-white hover:bg-white/10 rounded-xl transition">
                 <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -126,125 +126,89 @@
     <!-- ===== MAIN CONTENT ===== -->
     <main class="flex-1 ml-20 lg:ml-64 flex flex-col gap-6 px-4 sm:px-8 py-8 transition-all duration-300">
 
-        <!-- Card: Header + Tab Kategori -->
+        <!-- Card: Header + Search -->
         <div class="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
 
-            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
-                <div>
-                    <h1 class="text-2xl font-bold text-black">Katalog Produk</h1>
-                    <p class="text-sm mt-1 text-gray-400">Pilih produk untuk dibuatkan pesanan</p>
-                </div>
+            <h1 class="text-2xl font-bold text-black">Riwayat Transaksi</h1>
 
-                <div class="flex items-center gap-2 bg-gray-100 p-1 rounded-full w-fit">
-                    <a href="katalog_hardware.html" class="px-5 py-2 rounded-full text-sm font-medium bg-[#2E2E2E] text-white transition">Gadget</a>
-                    <a href="katalog_peripheral.html" class="px-5 py-2 rounded-full text-sm font-medium text-gray-500 hover:text-black transition">Networking</a>
-                </div>
-            </div>
-
-            <label class="flex items-center gap-3 border border-gray-200 rounded-full px-5 py-3 w-full sm:w-80 mt-6">
-                <input type="text" placeholder="Cari Produk..." class="w-full outline-none text-sm bg-transparent">
+            <label class="flex items-center gap-3 border border-gray-200 rounded-full px-5 py-3 w-full sm:w-96 mt-6">
+                <input type="text" placeholder="Cari Produk......" class="w-full outline-none text-sm bg-transparent">
                 <svg class="w-5 h-5 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="11" cy="11" r="8"></circle>
                     <path d="m21 21-4.35-4.35"></path>
                 </svg>
             </label>
+
         </div>
 
-        <!-- Card: List Produk -->
-        <div class="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 flex flex-col gap-4">
+        <!-- Card: Tabel Riwayat Transaksi -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 overflow-x-auto">
 
-            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
-                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/smart%20ring.png" alt="Smart Ring" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
-                <div class="flex-1">
+            <div class="grid grid-cols-4 gap-4 min-w-[900px] text-left border-b border-gray-200 pb-3">
+                <p class="font-semibold">Status Pembayaran</p>
+                <p class="font-semibold">Data Transaksi</p>
+                <p class="font-semibold">Data Barang</p>
+                <p class="font-semibold">Status Pesanan</p>
+            </div>
+
+            <!-- Baris: Sukses -->
+            <div class="grid grid-cols-4 gap-4 min-w-[900px] items-center border-b border-gray-100 py-5">
+
+                <div class="flex flex-col gap-2">
+                    <span class="bg-emerald-400 text-white text-sm font-medium text-center rounded-full px-4 py-2">Cash Lunas</span>
+                    <span class="bg-emerald-400 text-white text-sm font-medium text-center rounded-full px-4 py-2">Rp 699.000</span>
+                </div>
+
+                <div>
+                    <p class="font-semibold text-black">Jihan Sachoya</p>
+                    <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                        Masuk: 24-08-2026 (13:12)<br>
+                        Diproses: 24-08-2026 (13:12)<br>
+                        Selesai: 24-08-2026 (13:12)
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/smart%20ring.png" alt="Smart Ring" class="w-14 h-14 object-contain rounded-xl border border-gray-200 shrink-0">
                     <p class="font-semibold text-black">Smart Ring</p>
-                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Cincin pintar pelacak kesehatan, detak jantung, tidur, dan aktivitas harian secara praktis.</p>
-                    <div class="flex items-center gap-3 mt-3">
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 599.000</span>
-                    </div>
                 </div>
-                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg>
-                </a>
+
+                <div>
+                    <span class="bg-emerald-400 text-white text-sm font-medium rounded-full px-6 py-2 inline-block">SUKSES</span>
+                </div>
+
             </div>
 
-            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
-                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/headset.png" alt="FR Headset" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
-                <div class="flex-1">
-                    <p class="font-semibold text-black">FR Headset</p>
-                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Headset audio jernih dengan fitur peredam bising untuk pengalaman mendengarkan yang fokus.</p>
-                    <div class="flex items-center gap-3 mt-3">
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 449.000</span>
-                    </div>
-                </div>
-                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg>
-                </a>
-            </div>
+            <!-- Baris: Ditolak -->
+            <div class="grid grid-cols-4 gap-4 min-w-[900px] items-center border-b border-gray-100 py-5">
 
-            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
-                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/gps%20tracker.png" alt="GPS Tracker" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
-                <div class="flex-1">
-                    <p class="font-semibold text-black">GPS Tracker</p>
-                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Alat pelacak lokasi real-time, praktis untuk memantau kendaraan atau barang berharga.</p>
-                    <div class="flex items-center gap-3 mt-3">
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 350.000</span>
-                    </div>
+                <div class="flex flex-col gap-2">
+                    <span class="bg-emerald-400 text-white text-sm font-medium text-center rounded-full px-4 py-2">Cash Lunas</span>
+                    <span class="bg-emerald-400 text-white text-sm font-medium text-center rounded-full px-4 py-2">Rp 699.000</span>
                 </div>
-                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg>
-                </a>
-            </div>
 
-            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
-                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/e%20reader.png" alt="E-Reader" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
-                <div class="flex-1">
-                    <p class="font-semibold text-black">E-Reader</p>
-                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Perangkat baca buku digital dengan layar anti-silau, ringan dan nyaman dibawa kemana saja.</p>
-                    <div class="flex items-center gap-3 mt-3">
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 1.299.000</span>
-                    </div>
+                <div>
+                    <p class="font-semibold text-black">Jihan Sachoya</p>
+                    <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                        Masuk: 24-08-2026 (13:12)<br>
+                        Diproses: 24-08-2026 (13:12)<br>
+                        Selesai: 24-08-2026 (13:12)
+                    </p>
                 </div>
-                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg>
-                </a>
-            </div>
 
-            <div class="flex items-center gap-4 border border-gray-200 rounded-2xl p-4">
-                <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/tripod.png" alt="Phone Tripod" class="w-16 h-16 object-contain rounded-xl bg-gray-50 shrink-0">
-                <div class="flex-1">
-                    <p class="font-semibold text-black">Phone Tripod</p>
-                    <p class="text-sm text-gray-500 mt-1 hidden sm:block">Penyangga ponsel fleksibel dan stabil, ideal untuk rekaman video, konten, serta foto bersama.</p>
-                    <div class="flex items-center gap-3 mt-3">
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">100</span>
-                        <span class="border border-gray-300 rounded-full px-4 py-1 text-xs">Rp 169.000</span>
-                    </div>
+                <div class="flex items-center gap-3">
+                    <img src="../Asset%20SIM%20Modul%202/Asset%20Naming/smart%20ring.png" alt="Smart Ring" class="w-14 h-14 object-contain rounded-xl border border-gray-200 shrink-0">
+                    <p class="font-semibold text-black">Smart Ring</p>
                 </div>
-                <a href="detail.html" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#4A7EE0] hover:bg-blue-600 text-white shrink-0 transition">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg>
-                </a>
+
+                <div>
+                    <span class="bg-red-500 text-white text-sm font-medium rounded-full px-6 py-2 inline-block">Ditolak</span>
+                </div>
+
             </div>
 
             <!-- Pagination -->
-            <div class="flex items-center justify-center gap-2 mt-4">
+            <div class="flex items-center justify-center gap-2 mt-8">
                 <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-black bg-black text-white text-sm">1</a>
                 <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 text-sm hover:border-black transition">2</a>
                 <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 text-sm hover:border-black transition">3</a>
