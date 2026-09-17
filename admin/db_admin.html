@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="../Assets/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <title>Dashboard | Admin</title>
+</head>
+<body class="flex bg-gray-50 min-h-screen overflow-x-hidden">
+
+    <!-- ===== SIDEBAR: fixed, collapse di mobile ===== -->
+    <aside class="flex flex-col fixed top-0 left-0 z-50 w-20 lg:w-64 h-screen px-2 lg:px-4 py-6
+                   bg-[#4A7EE0] transition-all duration-300">
+
+        <div class="flex flex-col items-center text-center mb-8">
+            <img src="Asset SIM Modul 2\logo\Logo.png" alt="Mega Electronic" class="w-10 h-10 lg:w-16 lg:h-16 object-contain">
+            <p class="hidden lg:block text-white text-sm font-semibold mt-2" style="font-family: Georgia, serif; letter-spacing: 0.15em;">
+                MEGA ELECTRONIC
+            </p>
+        </div>
+
+        <nav class="flex flex-col flex-1 gap-2">
+
+            <a href="db_admin.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white bg-white/10 border border-white rounded-xl font-bold transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></path>
+                    <path d="M9 22V12h6v10"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Dashboard</span>
+            </a>
+
+            <a href="stock_produk1.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16v4H4z"></path>
+                    <path d="M4 8v12h16V8"></path>
+                    <path d="M10 12h4"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Stock</span>
+            </a>
+
+            <a href="daftar_fo.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Daftar Front Office</span>
+            </a>
+
+            <a href="daftar_pengguna.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <path d="M20 8v6M23 11h-6"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Daftar Pengguna</span>
+            </a>
+
+            <a href="riwayat_transaksi.html"
+               class="flex items-center justify-center lg:justify-start px-3 lg:px-4 py-3
+                      text-white hover:bg-white/10 rounded-xl transition">
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="hidden lg:block mx-3">Riwayat Transaksi</span>
+            </a>
+
+        </nav>
+
+        <a href="login_admin.html"
+           class="flex items-center justify-center gap-2 bg-[#EF6C6C] hover:bg-red-400 text-white text-sm font-medium py-3 rounded-full transition">
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <path d="M16 17l5-5-5-5"></path>
+                <path d="M21 12H9"></path>
+            </svg>
+            <span class="hidden lg:block">Logout</span>
+        </a>
+    </aside>
+
+    <!-- ===== MAIN CONTENT: kasih margin kiri = lebar sidebar ===== -->
+    <main class="flex-1 ml-20 lg:ml-64 flex flex-col items-center justify-center gap-10 px-6 py-16 transition-all duration-300">
+
+        <div class="flex flex-col items-center text-center">
+            <img src="Asset SIM Modul 2\logo\Logo.png" alt="Mega Electronic" class="w-20 h-20 object-contain">
+            <p class="text-xs font-semibold mt-1" style="font-family: Georgia, serif; letter-spacing: 0.15em;">MEGA ELECTRONIC</p>
+            <h1 class="text-2xl font-bold mt-5">Welcome to Dashboard!</h1>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full max-w-3xl">
+
+            <a href="stock_produk1.html"
+               class="flex flex-col items-center justify-center gap-4 bg-white border border-gray-200 rounded-2xl h-36 sm:h-40 px-4 hover:shadow-md hover:-translate-y-0.5 transition">
+                <svg class="h-8 w-8 sm:h-9 sm:w-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16v4H4z"></path>
+                    <path d="M4 8v12h16V8"></path>
+                    <path d="M10 12h4"></path>
+                </svg>
+                <span class="font-semibold text-sm text-center">Stock</span>
+            </a>
+
+            <a href="daftar_fo.html"
+               class="flex flex-col items-center justify-center gap-4 bg-white border border-gray-200 rounded-2xl h-36 sm:h-40 px-4 hover:shadow-md hover:-translate-y-0.5 transition">
+                <svg class="h-8 w-8 sm:h-9 sm:w-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span class="font-semibold text-sm text-center">Daftar Front<br>Office</span>
+            </a>
+
+            <a href="daftar_pengguna.html"
+               class="flex flex-col items-center justify-center gap-4 bg-white border border-gray-200 rounded-2xl h-36 sm:h-40 px-4 hover:shadow-md hover:-translate-y-0.5 transition">
+                <svg class="h-8 w-8 sm:h-9 sm:w-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <path d="M20 8v6M23 11h-6"></path>
+                </svg>
+                <span class="font-semibold text-sm text-center">Daftar<br>Pengguna</span>
+            </a>
+
+            <a href="riwayat_transaksi.html"
+               class="flex flex-col items-center justify-center gap-4 bg-white border border-gray-200 rounded-2xl h-36 sm:h-40 px-4 hover:shadow-md hover:-translate-y-0.5 transition">
+                <svg class="h-8 w-8 sm:h-9 sm:w-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="font-semibold text-sm text-center">Riwayat<br>Transaksi</span>
+            </a>
+
+        </div>
+    </main>
+
+</body>
+</html>
