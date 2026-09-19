@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" type="image/x-icon" href="../Asset%20SIM%20Modul%202/logo/Logo.png">
+    <link rel="icon" type="image/x-icon" href="../asset/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
                    bg-[#4A7EE0] transition-all duration-300">
 
         <div class="flex flex-col items-center text-center mb-8">
-            <img src="../Asset%20SIM%20Modul%202/logo/Logo.png" alt="Mega Electronic" class="w-10 h-10 lg:w-16 lg:h-16 object-contain">
+            <img src="../asset/logo.png" alt="Mega Electronic" class="w-10 h-10 lg:w-16 lg:h-16 object-contain">
             <p class="hidden lg:block text-white text-sm font-semibold mt-2" style="font-family: Georgia, serif; letter-spacing: 0.15em;">
                 MEGA ELECTRONIC
             </p>
@@ -100,7 +100,7 @@
     </aside>
 
     <!-- ===== MAIN CONTENT ===== -->
-    <main class="flex-1 ml-20 lg:ml-64 flex flex-col gap-6 px-4 sm:px-8 py-8 transition-all duration-300">
+    <main class="flex-1 min-w-0 ml-20 lg:ml-64 flex flex-col gap-6 px-4 sm:px-8 py-8 transition-all duration-300">
 
         <!-- Card: Header -->
         <div class="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
@@ -135,3 +135,38 @@
                     <div class="flex flex-col gap-2">
                         <label class="text-sm font-medium text-black">Harga Produk</label>
                         <input type="text" value="Rp 599.000" class="border border-gray-200 rounded-full px-5 py-3 text-sm outline-none focus:border-[#4A7EE0] transition">
+
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label class="text-sm font-medium text-black">Deskripsi Produk</label>
+                        <textarea rows="4" class="border border-gray-200 rounded-2xl px-5 py-3 text-sm outline-none focus:border-[#4A7EE0] transition resize-none">Cincin pintar pelacak kesehatan, detak jantung, tidur, dan aktivitas harian secara praktis.</textarea>
+                    </div>
+
+                </div>
+
+                <!-- Kolom kanan: preview foto produk (1/3 lebar) -->
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-medium text-black">Foto Produk</label>
+                    <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-56 lg:h-64 border border-gray-200 overflow-hidden">
+                        <img src="../asset/smart%20ring.png" alt="Smart Ring" class="w-full h-full object-contain p-4">
+                    </div>
+                    <label class="mt-1 flex items-center justify-center border border-gray-300 hover:border-black text-sm font-medium py-3 rounded-full transition cursor-pointer">
+                        Ganti foto
+                        <input type="file" accept="image/*" class="hidden">
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="flex items-center justify-end gap-3 mt-8">
+                <a href="stock_produk1.html" class="border border-gray-300 hover:border-black text-sm font-medium px-8 py-3 rounded-full transition">Batal</a>
+                <a href="stock_produk1.html" class="bg-[#4A7EE0] hover:bg-blue-600 text-white text-sm font-medium px-8 py-3 rounded-full transition">Update</a>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
