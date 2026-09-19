@@ -26,13 +26,12 @@
                 <!-- Logo -->
                 <div class="flex items-center gap-3 shrink-0">
                     <img src="../asset/logo.png" alt="Mega Electronic" class="w-8 h-8 sm:w-10 sm:h-10">
-                    <span class="hidden sm:block text-sm font-bold" style="font-family: Georgia, serif; letter-spacing: 0.1em;">MEGA</span>
                 </div>
 
                 <!-- Menu Desktop -->
                 <div class="hidden md:flex items-center gap-8">
                     <a href="home_user.html" class="text-sm font-medium text-black hover:text-[#4A7EE0] transition">Home</a>
-                    <a href="produk1_user.html" class="text-sm font-medium text-gray-700 hover:text-[#4A7EE0] transition">Product</a>
+                    <a href="#product" class="text-sm font-medium text-gray-700 hover:text-[#4A7EE0] transition">Product</a>
                     <a href="produk1_user.html" class="text-sm font-medium text-gray-700 hover:text-[#4A7EE0] transition">Gadget</a>
                     <a href="produk2_user.html" class="text-sm font-medium text-gray-700 hover:text-[#4A7EE0] transition">Networking</a>
                     <a href="#contact" class="text-sm font-medium text-gray-700 hover:text-[#4A7EE0] transition">Contact</a>
@@ -107,9 +106,7 @@
                 <div class="relative hidden lg:flex items-center justify-center h-80">
                     <div class="absolute w-80 h-80 bg-gradient-to-br from-blue-400 to-blue-200 rounded-full opacity-20 blur-3xl"></div>
                     <div class="relative flex items-center justify-center">
-                        <svg class="w-48 h-48 text-gray-300" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path>
-                        </svg>
+                        <img src="../asset/hero produk.png" alt="Produk Mega Electronic" class="w-full max-w-md h-auto object-contain">
                     </div>
                 </div>
             </div>
@@ -129,7 +126,8 @@
                 
                 <!-- Kategori 1: Gadget -->
                 <a href="produk1_user.html" 
-                   class="group relative bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden h-56 sm:h-64 hover:shadow-xl transition flex items-end p-6 sm:p-8">
+                   class="group relative rounded-3xl overflow-hidden h-56 sm:h-64 hover:shadow-xl transition flex items-end p-6 sm:p-8 bg-cover bg-center"
+                   style="background-image: url('../asset/hero gadget.png');">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
                     <div class="relative z-10">
                         <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Gadget</h3>
@@ -145,7 +143,8 @@
 
                 <!-- Kategori 2: Networking -->
                 <a href="produk2_user.html" 
-                   class="group relative bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden h-56 sm:h-64 hover:shadow-xl transition flex items-end p-6 sm:p-8">
+                   class="group relative rounded-3xl overflow-hidden h-56 sm:h-64 hover:shadow-xl transition flex items-end p-6 sm:p-8 bg-cover bg-center"
+                   style="background-image: url('../asset/hero networking.png');">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
                     <div class="relative z-10">
                         <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Networking</h3>
@@ -176,7 +175,7 @@
                 <!-- Product Card 1 -->
                 <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
                     <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
-                        <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-full opacity-50"></div>
+                        <img src="../asset/smart ring.png" alt="Smart Ring" class="w-full h-full object-contain p-6">
                         <span class="absolute top-4 right-4 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full">⭐ 4.8/5</span>
                     </div>
                     <div class="p-4 sm:p-5">
@@ -192,7 +191,7 @@
                 <!-- Product Card 2 -->
                 <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
                     <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
-                        <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-full opacity-50"></div>
+                        <img src="../asset/headset.png" alt="FR Headset" class="w-full h-full object-contain p-6">
                         <span class="absolute top-4 right-4 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full">⭐ 4.9/5</span>
                     </div>
                     <div class="p-4 sm:p-5">
@@ -208,7 +207,7 @@
                 <!-- Product Card 3 -->
                 <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
                     <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
-                        <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-full opacity-50"></div>
+                        <img src="../asset/gps tracker.png" alt="GPS Tracker" class="w-full h-full object-contain p-6">
                         <span class="absolute top-4 right-4 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full">⭐ 4.7/5</span>
                     </div>
                     <div class="p-4 sm:p-5">
@@ -224,7 +223,7 @@
                 <!-- Product Card 4 -->
                 <a href="detail_user.html" class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition">
                     <div class="bg-gray-100 h-48 sm:h-56 flex items-center justify-center overflow-hidden relative">
-                        <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gray-200 rounded-full opacity-50"></div>
+                        <img src="../asset/wifi extender.png" alt="WiFi Extender" class="w-full h-full object-contain p-6">
                         <span class="absolute top-4 right-4 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full">⭐ 4.6/5</span>
                     </div>
                     <div class="p-4 sm:p-5">
@@ -273,7 +272,7 @@
                         </svg>
                     </div>
                     <h3 class="font-bold text-sm sm:text-base mb-2">Harga Kompetitif</h3>
-                    <p class="text-xs sm:text-sm text-gray-400">Harga terbaik dengan kualitas yang sepadang</p>
+                    <p class="text-xs sm:text-sm text-gray-400">Harga terbaik dengan kualitas yang sepadan</p>
                 </div>
 
                 <div class="flex flex-col items-center text-center">
@@ -350,9 +349,9 @@
                 <div>
                     <h4 class="font-bold text-white mb-3">Product</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition">Gadget</a></li>
-                        <li><a href="#" class="hover:text-white transition">Networking</a></li>
-                        <li><a href="#" class="hover:text-white transition">All Products</a></li>
+                        <li><a href="produk1_user.html" class="hover:text-white transition">Gadget</a></li>
+                        <li><a href="produk2_user.html" class="hover:text-white transition">Networking</a></li>
+                        <li><a href="home_user.html#product" class="hover:text-white transition">All Products</a></li>
                     </ul>
                 </div>
                 <div>
